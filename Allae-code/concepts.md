@@ -212,7 +212,46 @@ we've said that the `train_test_split()` method :
         So the results are reproducible.
 
 
+    * **Why exactly the number 42 in `random_state` ?**
+
+     - There is nothing special about the number 42 , we can use :
+       - `random_state=1` or
+       - `random_state=2` or
+       - `random_state=100`
+
+       They are all valid.
+
+     - The important thing is to use the same fixed number if you want the same split every time 
+
+
+* Here how it works approximately :
+
+    1- random_state=42
         
+        2- **Start the "random-number" generator**
+            
+        3- **Generator produces a sequence of "random" numbers**
+            
+        4- `train_test_split()` **uses those generated random numbers** to shuffle/select the rows
+            
+        5- **every time we use `random_state=42` we got the Same random numbers**
+            ↓
+        6- **Same shuffle and Same split**
+    
+    But **if we use `random_state=100`** :
+
+      - **Different sequence**
+       
+      - **Different shuffle**
+            
+      - **Different split**
+
+
+* Conclusion :
+
+The number 42 of `random_state=42` doesn't tell Python how to split the data. It tells the random-number generator where to start, so it produces the same "random" sequence every time, then we got the same data split every time we use `random_state=42`.
+
+---
 
 
 
