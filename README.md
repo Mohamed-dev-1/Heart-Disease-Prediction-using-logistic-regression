@@ -168,10 +168,10 @@ Currently working through:
 * [x] Inspect the dataset
 * [x] Identify missing values
 * [x] Understand median imputation
-* [ ] Handle missing values correctly
-* [ ] Separate features and target
-* [ ] Train / test split
-* [ ] Feature scaling
+* [x] Handle missing values correctly
+* [x] Separate features and target
+* [x] Train / test split
+* [x] Feature scaling
 * [ ] Train Logistic Regression model
 * [ ] Make predictions
 * [ ] Evaluate the model
