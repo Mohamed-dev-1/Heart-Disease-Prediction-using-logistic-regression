@@ -41,7 +41,7 @@ The dataset contains information about patients such as:
 * Diastolic blood pressure
 * BMI
 * Heart rate
-* Glucose level
+* Glucose levels
 
 ### Target
 
