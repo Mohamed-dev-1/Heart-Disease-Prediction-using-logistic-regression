@@ -163,6 +163,56 @@ The end of the explantion of "why do we use median exactly to fill in the missin
 ---
 
 
+**2/ Why do we use `random_state = 42` in : `X_train, ... , y_test = train_test_split(x, y, test_size = 0.25 , random_state=42)` ?**
+
+we've said that the `train_test_split()` method :
+
+   - Gets the features "x" and the target "y" as parameters + the "test_size" + "random_state"
+
+   - Then the method shuffels the rows randomly and split the shuffeled rows into 2 groups (training and testing)
+
+   now, the data shuffeling and splitting is random , and that will cause a problem,
+
+    The **main risk of letting that random shuffeling and spliting** is **getting a different split each time, which means your model's performance can change just because the test data changed**.
+
+       - The problem : 
+
+        -> Random split
+        
+        -> Different test data
+            
+        -> Different accuracy
+            
+        -> Hard to know if the model actually improved
+
+    **That's why we use a fixed random_state (To control the random shuffling of the data)so the experiments will be reproducible and comparable**.
+
+
+    - Without random_state:
+
+        Run 1 -> Split A
+        Run 2 -> Split B
+        Run 3 -> Split C
+
+      **Because the shuffle is random, we could get a different split each time we run the code**.
+
+    
+    * What does `random_state=42` do?
+
+     - It gives the random process a fixed seed (starting point).
+
+        **random_state=42** , means: **"Use the same starting point for the random process every time."**
+
+        Therefore:
+
+        Run 1 -> Same split
+        Run 2 -> Same split
+        Run 3 -> Same split
+
+        So the results are reproducible.
+
+
+        
 
 
 
