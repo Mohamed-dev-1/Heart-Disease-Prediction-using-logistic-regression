@@ -172,9 +172,9 @@ Currently working through:
 * [x] Separate features and target
 * [x] Train / test split
 * [x] Feature scaling
-* [ ] Train Logistic Regression model
-* [ ] Make predictions
-* [ ] Evaluate the model
+* [x] Train Logistic Regression model
+* [x] Make predictions
+* [x] Evaluate the model
 * [ ] Analyze the confusion matrix
 * [ ] Improve the model
 
