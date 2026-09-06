@@ -174,7 +174,7 @@ Currently working through:
 * [x] Feature scaling
 * [x] Train Logistic Regression model
 * [x] Make predictions
-* [x] Evaluate the model
+* [ ] Evaluate the model
 * [ ] Analyze the confusion matrix
 * [ ] Improve the model
 
