@@ -10,7 +10,7 @@
 
 here is the story from the beginning :
 
-i checked for any missing values in the data set and found this :
+i checked for any missing values in the data frame and found this :
 
 male                 0 \
 age                  0 \
