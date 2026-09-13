@@ -50,7 +50,7 @@ Age:
 38 \
 **Nan** \
 49 \
-61 \
+61 
 
 -> we have **1 missing value**
 
