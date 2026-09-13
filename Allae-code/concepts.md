@@ -45,18 +45,18 @@ Suppose we have:
 
 Age:
 
-45
-52
-38
-Nan
-49
-61
+45 \
+52 \
+38 \
+**Nan** \
+49 \
+61 \
 
--> we have 1 missing value
+-> we have **1 missing value**
 
-The model does not know what to do with `Nan`, so we need to replace it with some reasonable value. [This is called **value imputation** (إسناد القيمة) ]
+The model does not know what to do with **`Nan`**, so we need to replace it with some reasonable value. [This is called **value imputation** (إسناد القيمة) ]
 
-in **imputation** we can use : "mean" , "median" , "mode" , or more advanced methods
+in **imputation** we can use : **"mean"** , **"median"** , **"mode"** , or more advanced methods ...
 
 But for our project , we're using the "**median**"
 
@@ -64,7 +64,7 @@ But for our project , we're using the "**median**"
 
     - The **median is simply the middle value after sorting the data** , example:
 
-    we have : 10, 20, 30, 40, 50
+    we have : 10, 20, **30**, 40, 50
 
     => The median (middle value) is : 30
 
@@ -72,9 +72,9 @@ But for our project , we're using the "**median**"
 
     the middle 2 values are 20 and 30, then :
 
-        median = (20 + 30) / 2
+        **median = (20 + 30) / 2**
 
-        median = 25
+        **median = 25**
 
 
 * Why noy just use the mean (the average of all the column values) ?
@@ -89,7 +89,7 @@ Imagine we have people's cholesterol values:
     205
     210
 
-All the values are resonably close to each other.
+**All the values are close to each other**.
 
    - **using the mean** : 
 
@@ -103,7 +103,7 @@ All the values are resonably close to each other.
 
     **median = 197**
 
-    So, Either using the median or the mean , the results would be similar for both.
+    So, Either using the median or the mean , the results would be similar for both (because as we've said : **all the values are close to each other**).
 
 But imagine we have this data :
 
