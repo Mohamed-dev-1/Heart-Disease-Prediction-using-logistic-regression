@@ -27,7 +27,7 @@ diaBP                0 \
 BMI                 **19**      <- \
 heartRate            **1**      <- \
 glucose            **388**      <- \
-TenYearCHD           0 \
+TenYearCHD           0 
 
 
 
@@ -72,12 +72,12 @@ But for our project , we're using the "**median**"
 
     the middle 2 values are 20 and 30, then :
 
-        **median = (20 + 30) / 2**
+        median = (20 + 30) / 2
 
-        **median = 25**
+        median = 25
 
 
-* Why noy just use the mean (the average of all the column values) ?
+* Why not just use the mean (the average of all the column values) ?
 
 
 Imagine we have people's cholesterol values:
@@ -95,15 +95,17 @@ Imagine we have people's cholesterol values:
 
     mean = (180 + 190 + 195 + 200 + 205 + 210) / 6
 
-    **mean = 196.6**
+    mean = 196.6
 
    - **using the median** :
 
     median = (195 + 200) / 2
 
-    **median = 197**
+    median = 197
 
-    So, Either using the median or the mean , the results would be similar for both (because as we've said : **all the values are close to each other**).
+So, Either **using the median or the mean , the results would be similar for both**:
+
+- because as we've said : **all the values are close to each other**.
 
 But imagine we have this data :
 
@@ -113,30 +115,32 @@ But imagine we have this data :
     200
     205
     800
+   
+   Pay close attention that : **not all the numbers are close to each other due to 800 , it is an extreme value among the other values**.
 
    - **using the mean** : 
 
     mean = (180 + 190 + 195 + 200 + 205 + 800) / 6
 
-    **mean = 295**
+    mean = 295
 
-    The value 800 is an extreme value , it takes the mean value way too far comparing to the other values of the column.
+   **The value 800 is an extreme value , So it took the `mean` value way too far comparing to the other values of the column**.
 
 
    - **using the median** :
 
     median = (195 + 200) / 2
 
-    **median = 197**
+    median = 197
 
-    The median value is more resonable because it it more proximate to the other values in the column.
+   **The median value is more reasonable** because **it is more proximate to the majority of the other values in the column**.
 
 
-    So , we prefer to use the median to fill the missing values because it produces a reasonable value to fill with.
+  So , we prefer to use **the median** to fill the missing values because the median produces a reasonable value (a close value to the other values of the same column) to fill with.
 
-    - The key difference between usign **median** and **mean** :
+    - The key difference between using median and mean :
 
-        **MEAN**
+        * MEAN :
 
         - Every value influences it
                 
@@ -145,7 +149,7 @@ But imagine we have this data :
         - Sensitive to outliers
 
 
-        **MEDIAN**
+        * MEDIAN :
 
         - Looks at the middle of the distribution
                 
@@ -154,7 +158,7 @@ But imagine we have this data :
         - Robust to outliers
 
 
-**That's the main reason we often prefer median imputation.**
+**So the main reason we often prefer median imputation simply is : that the median produces a value close to the other values of that same column.**
 
 
 
