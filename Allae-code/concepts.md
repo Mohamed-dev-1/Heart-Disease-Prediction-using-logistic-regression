@@ -12,22 +12,22 @@ here is the story from the beginning :
 
 i checked for any missing values in the data set and found this :
 
-male                 0
-age                  0
-education          105      <-
-currentSmoker        0
-cigsPerDay          29      <-
-BPMeds              53      <-
-prevalentStroke      0
-prevalentHyp         0
-diabetes             0
-totChol             50      <-
-sysBP                0
-diaBP                0
-BMI                 19      <-
-heartRate            1      <-
-glucose            388      <-
-TenYearCHD           0
+male                 0 \
+age                  0 \
+education          105      <- \
+currentSmoker        0 \
+cigsPerDay          29      <- \
+BPMeds              53      <- \
+prevalentStroke      0 \
+prevalentHyp         0 \
+diabetes             0 \
+totChol             50      <- \
+sysBP                0 \
+diaBP                0 \
+BMI                 19      <- \
+heartRate            1      <- \
+glucose            388      <- \
+TenYearCHD           0 \
 
 
 
