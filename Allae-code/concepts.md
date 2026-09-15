@@ -253,7 +253,7 @@ we've said that the `train_test_split()` method :
 
 * Conclusion :
 
-The number 42 of `random_state=42` doesn't tell Python how to split the data. It tells the random-number generator where to start, so it produces the same "random" sequence every time, then we got the same data split every time we use `random_state=42`.
+The number 42 of `random_state=42` tell Python how to split the data. It tells the random-number generator where to start, so it produces the same "random" sequence every time, then we got the same data split every time we use `random_state=42`.
 
 ---
 
